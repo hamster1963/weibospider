@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # weibo-hot-search
 
 [![license](https://img.shields.io/github/license/Arrackisarookie/weibo-hot-search)](https://github.com/Arrackisarookie/weibo-hot-search/blob/master/LICENSE)
@@ -76,3 +77,6 @@
 ### License
 
 [weibo-hot-search](https://github.com/Arrackisarookie/weibo-hot-search) 的源码使用 MIT License 发布。具体内容请查看 [LICENSE](./LICENSE) 文件。
+=======
+# weibospider
+>>>>>>> 934354f93ed819843e8ef6eaca0ebc946b5648a4
