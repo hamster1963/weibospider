@@ -16,30 +16,31 @@ logger = log_tools.init_logger(__name__)
 
 
 def getHTML(url, needPretty=False):
-    ''' 获取网页 HTML 返回字符串
+    """ 获取网页 HTML 返回字符串
 
     Args:
         url: str, 网页网址
         needPretty: bool, 是否需要美化(开发或测试时可用)
     Returns:
         HTML 字符串
-    '''
+    """
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                      'Chrome/84.0.4147.125 Safari/537.36 '
     }
     response = requests.get(url, headers=headers)
     return response.text
 
 
 def save(filename, content):
-    ''' 写文件
+    """ 写文件
 
     Args:
         filename: str, 文件路径
         content: str/dict, 需要写入的内容
     Returns:
         None
-    '''
+    """
     with open(filename, 'w', encoding='utf-8') as f:
         # 写 JSON
         if filename.endswith('.json') and isinstance(content, dict):
@@ -50,13 +51,13 @@ def save(filename, content):
 
 
 def load(filename):
-    ''' 读文件
+    """ 读文件
 
     Args:
         filename: str, 文件路径
     Returns:
         文件所有内容 字符串
-    '''
+    """
     with open(filename, 'r', encoding='utf-8') as f:
         content = f.read()
     return content
@@ -64,19 +65,19 @@ def load(filename):
 
 # 使用 xpath 解析 HTML
 def parseHTMLByXPath(content):
-    ''' 使用 xpath 解析 HTML, 提取榜单信息
+    """ 使用 xpath 解析 HTML, 提取榜单信息
 
     Args:
         content: str, 待解析的 HTML 字符串
     Returns:
         榜单信息的字典 字典
-    '''
+    """
     html = etree.HTML(content)
 
-    titles = html.xpath('//tr[position()>1]/td[@class="td-02"]/a[not(contains(@href, "javascript:void(0);"))]/text()')
-    hrefs = html.xpath('//tr[position()>1]/td[@class="td-02"]/a[not(contains(@href, "javascript:void(0);"))]/@href')
+    titles = html.xpath('//tr[position()>1]/td[@class="td-02"]/a[not(contains(@href, "javascript:void(0);"))]/text()')[0:10]
+    hrefs = html.xpath('//tr[position()>1]/td[@class="td-02"]/a[not(contains(@href, "javascript:void(0);"))]/@href')[0:10]
     hots = html.xpath(
-        '//tr[position()>1]/td[@class="td-02"]/a[not(contains(@href, "javascript:void(0);"))]/../span/text()')
+        '//tr[position()>1]/td[@class="td-02"]/a[not(contains(@href, "javascript:void(0);"))]/../span/text()')[0:10]
     titles = [title.strip() for title in titles]
     hrefs = [BASE_URL + href.strip() for href in hrefs]
     hots = [int(hot.strip()) for hot in hots]
@@ -90,13 +91,13 @@ def parseHTMLByXPath(content):
 
 # 更新本日榜单
 def updateJSON(correntRank):
-    ''' 更新当天的 JSON 文件
+    """ 更新当天的 JSON 文件
 
     Args:
         correntRank: dict, 最新的榜单信息
     Returns:
         与当天历史榜单对比去重, 排序后的榜单信息字典
-    '''
+    """
     filename = datetime.today().strftime('%Y%m%d') + '.json'
     filename = os.path.join(JSON_DIR, filename)
 
@@ -122,13 +123,13 @@ def updateJSON(correntRank):
 
 
 def updateArchive(rank):
-    ''' 更新当天的 Markdown 归档文件
+    """ 更新当天的 Markdown 归档文件
 
     Args:
         rank: dict, 榜单信息
     Returns:
         更新后当天 Markdown 文件内容
-    '''
+    """
     line = '1. [{title}]({href}) {hot}'
     lines = [line.format(title=k, hot=v['hot'], href=v['href']) for k, v in rank.items()]
     content = '\n'.join(lines)
@@ -160,8 +161,8 @@ def updateReadme(rank):
         save(filename, content)
 
     except IOError:
-        print
-        "Error: 没有找到文件或读取文件失败"
+        print(
+            "Error: 没有找到文件或读取文件失败")
     else:
         print('最后更新时间 {}\n\n'.format(datetime.now().strftime('%Y-%m-%d %X')))
 
@@ -177,7 +178,6 @@ def main():
     except Exception as e:
         logger.exception(e)
         raise e
-
 
 if __name__ == '__main__':
     main()

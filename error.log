@@ -1,0 +1,42 @@
+2021-06-14 21:40:50,818 - ERROR - weibo.py[:179] - list indices must be integers or slices, not tuple
+Traceback (most recent call last):
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 174, in main
+    correntRank = parseHTMLByXPath(content)
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 80, in parseHTMLByXPath
+    titles = [title.strip() for title in titles[0, 11]]
+TypeError: list indices must be integers or slices, not tuple
+2021-06-14 21:43:36,774 - ERROR - weibo.py[:179] - list indices must be integers or slices, not tuple
+Traceback (most recent call last):
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 174, in main
+    correntRank = parseHTMLByXPath(content)
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 80, in parseHTMLByXPath
+    titles = [title.strip() for title in titles][0, 10]
+TypeError: list indices must be integers or slices, not tuple
+2021-06-14 21:45:01,186 - ERROR - weibo.py[:179] - 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 174, in main
+    correntRank = parseHTMLByXPath(content)
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 86, in parseHTMLByXPath
+    correntRank[title] = {'href': hrefs[i], 'hot': hots[i]}
+TypeError: 'int' object is not subscriptable
+2021-06-14 21:48:06,991 - ERROR - weibo.py[:180] - string indices must be integers
+Traceback (most recent call last):
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 175, in main
+    correntRank = parseHTMLByXPath(content)
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 76, in parseHTMLByXPath
+    titles = html.xpath('//tr[position()>1]/td[@class="td-02"]/a[not(contains(@href, "javascript:void(0);"))]/text()'[0,10])
+TypeError: string indices must be integers
+2021-06-14 21:49:04,981 - ERROR - weibo.py[:180] - list indices must be integers or slices, not tuple
+Traceback (most recent call last):
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 175, in main
+    correntRank = parseHTMLByXPath(content)
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 76, in parseHTMLByXPath
+    titles = html.xpath('//tr[position()>1]/td[@class="td-02"]/a[not(contains(@href, "javascript:void(0);"))]/text()')[0,10]
+TypeError: list indices must be integers or slices, not tuple
+2021-06-14 21:51:24,624 - ERROR - weibo.py[:181] - 'list' object has no attribute 'subList'
+Traceback (most recent call last):
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 176, in main
+    correntRank = parseHTMLByXPath(content)
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 77, in parseHTMLByXPath
+    titles = titles.subList(0, 10)
+AttributeError: 'list' object has no attribute 'subList'
