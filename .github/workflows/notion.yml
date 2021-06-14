@@ -5,7 +5,7 @@ name: Python application
 
 on:
   schedule:
-    - cron: '0, *, *, *, *'
+    - cron: '1,8,15 * * * *'
     
 jobs:
   build:
@@ -32,8 +32,7 @@ jobs:
         git config --local user.name "hamster1963"
         git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git pull --rebase
-        python weibo.py
+        python weibo_to_notion.py
         git add .
         git commit -m "update by github action"
         git push 
-
