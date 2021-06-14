@@ -28,6 +28,7 @@ def get_latestjson():
         file_dict[ctime] = i  # 添加创建时间和文件名到字典
     max_ctime = max(file_dict.keys())  # 取值最大的时间
     lastest_json = './raw/' + file_dict[max_ctime]
+
     return lastest_json
 
 
