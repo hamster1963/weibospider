@@ -37,7 +37,9 @@ jobs:
         git config --local user.email "1410514192@qq.com"
         git config --local user.name "hamster1963"
         git pull origin main  
-        git commit -m "生成词云图"
+        git stash
+        git pull
+        git stash pop
         git add .
         git commit -m "生成词云图"
         git push 
