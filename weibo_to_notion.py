@@ -33,6 +33,11 @@ def get_latestjson():
 
 
 def convert_json():
+    """
+    获取最新json并且转化成字符串
+    Returns:
+
+    """
     jsonlist = []
     with open(get_latestjson()) as js:
         jsoncontent = json.load(js)
@@ -43,8 +48,32 @@ def convert_json():
         jsonlist = '\n'.join(jsonlist)
         return jsonlist
 
+def saveword():
+    """
+    保存到文件中便于生成词云
+    Returns:
+
+    """
+    jsonlist = []
+    with open(get_latestjson()) as js:
+        jsoncontent = json.load(js)
+        for i in jsoncontent:
+            jsonlist.append(i)
+        jsonlist = '\n'.join(jsonlist)
+        with open('word.txt','w') as fp:
+            fp.write(jsonlist)
+
+
 
 def push_to_notion(uploadjson):
+    """
+    将content推送到notiob中
+    Args:
+        uploadjson:
+
+    Returns:
+
+    """
     json = {
         'parent': {
             'database_id': 'b353529fd9734f78ae4fc8c68bd5a609'
@@ -129,6 +158,10 @@ def push_to_notion(uploadjson):
 
 
 if __name__ == "__main__":
+    """
+    主程序
+    """
+
     lastest_json = get_latestjson()
     uptime = []
     for x in lastest_json:
@@ -137,4 +170,5 @@ if __name__ == "__main__":
             uptime.append(x.group())
     uptime = "".join(uptime)
     uploadjson = convert_json()
+    saveword()
     push_to_notion(uploadjson)
