@@ -173,3 +173,12 @@ Traceback (most recent call last):
   File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 112, in updateJSON
     historyRank[k]['hot'] = max(historyRank[k]['hot'], correntRank[k]['hot'])
 TypeError: list indices must be integers or slices, not str
+2021-06-15 13:21:07,487 - ERROR - weibo.py[:186] - [Errno 2] No such file or directory: './raw/20210615.json'
+Traceback (most recent call last):
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 182, in main
+    rankJSON = updateJSON(correntRank)
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 106, in updateJSON
+    save(filename, {})
+  File "/Users/hamster/Desktop/weibo-hot-search-main/weibo.py", line 44, in save
+    with open(filename, 'w', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './raw/20210615.json'
