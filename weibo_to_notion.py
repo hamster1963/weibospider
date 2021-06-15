@@ -10,7 +10,13 @@ url = "https://api.notion.com/v1/pages"
 session = requests.Session()
 session.headers = {"Authorization": "secret_MKzGB222HFJLbWa8kr18huPsk8AZ3XTB0I668qO8tuW",
                    "Notion-Version": "2021-05-13"}
-update_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+
+# 获取东八区时间
+utc_dt = datetime.utcnow().replace(tzinfo=timezone.utc)
+# print(utc_dt)
+cn_dt = utc_dt.astimezone(timezone(timedelta(hours=8)))
+# print(cn_dt)
+update_time = cn_dt.now().strftime('%Y-%m-%d %H:%M:%S')
 
 def get_latestjson():
     """
@@ -164,12 +170,11 @@ if __name__ == "__main__":
 
     lastest_json = get_latestjson()
     uptime = []
-
     for x in lastest_json:
         x = re.match('^[0-9]*$', x)
         if x is not None:
             uptime.append(x.group())
     uptime = "".join(uptime)
-    uploadjson = convert_json()
+    uploadjson = uploadjson = "微博今日热搜" + " " + update_time + "\n" + convert_json()
     saveword()
     push_to_notion(uploadjson)
