@@ -164,6 +164,7 @@ if __name__ == "__main__":
 
     lastest_json = get_latestjson()
     uptime = []
+
     for x in lastest_json:
         x = re.match('^[0-9]*$', x)
         if x is not None:
