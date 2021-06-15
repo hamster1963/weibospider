@@ -1,9 +1,9 @@
 <!-- Rank Begin -->
 
-最后更新时间 2021-06-15 16:07:31
+最后更新时间 2021-06-15 16:10:52
 
+1. [钟薛高雪糕最贵一支66元](https://s.weibo.com/weibo?q=%23%E9%92%9F%E8%96%9B%E9%AB%98%E9%9B%AA%E7%B3%95%E6%9C%80%E8%B4%B5%E4%B8%80%E6%94%AF66%E5%85%83%23&Refer=top) 3622363
 1. [央视给景甜p的裙子](https://s.weibo.com/weibo?q=%23%E5%A4%AE%E8%A7%86%E7%BB%99%E6%99%AF%E7%94%9Cp%E7%9A%84%E8%A3%99%E5%AD%90%23&Refer=top) 3528219
-1. [钟薛高雪糕最贵一支66元](https://s.weibo.com/weibo?q=%23%E9%92%9F%E8%96%9B%E9%AB%98%E9%9B%AA%E7%B3%95%E6%9C%80%E8%B4%B5%E4%B8%80%E6%94%AF66%E5%85%83%23&Refer=top) 3514619
 1. [中俄关系处在历史最高水平](https://s.weibo.com/weibo?q=%E4%B8%AD%E4%BF%84%E5%85%B3%E7%B3%BB%E5%A4%84%E5%9C%A8%E5%8E%86%E5%8F%B2%E6%9C%80%E9%AB%98%E6%B0%B4%E5%B9%B3&Refer=top) 3119517
 1. [金莎喝咖啡喝到细菌感染](https://s.weibo.com/weibo?q=%23%E9%87%91%E8%8E%8E%E5%96%9D%E5%92%96%E5%95%A1%E5%96%9D%E5%88%B0%E7%BB%86%E8%8F%8C%E6%84%9F%E6%9F%93%23&Refer=top) 2224397
 1. [孙一宁 王思聪](https://s.weibo.com/weibo?q=%E5%AD%99%E4%B8%80%E5%AE%81%20%E7%8E%8B%E6%80%9D%E8%81%AA&Refer=top) 2183782
