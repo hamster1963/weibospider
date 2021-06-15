@@ -9,8 +9,14 @@ import jieba
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from PIL import Image
-
-
+from datetime import datetime, timedelta, timezone
+# 获取东八区时间
+utc_dt = datetime.utcnow().replace(tzinfo=timezone.utc)
+# print(utc_dt)
+cn_dt = utc_dt.astimezone(timezone(timedelta(hours=8)))
+# print(cn_dt)
+update_time = cn_dt.now().strftime('%Y-%m-%d %H:%M:%S')
+image_time = cn_dt.now().strftime('%Y-%m-%d')
 # 创建停用词list
 def stopwordslist(filepath):
     stopwords = [line.strip() for line in open(filepath, 'r', encoding='utf-8').readlines()]
@@ -46,5 +52,5 @@ wordcloud = WordCloud(background_color="white", max_words=500, width=2000, heigh
                       font_path="simsun.ttf").generate(mytext)
 plt.imshow(wordcloud)
 plt.axis("off")
-plt.savefig('picture.jpg', dpi=500)
+plt.savefig('微博 %s.jpg' % image_time, dpi=500)
 plt.show()
