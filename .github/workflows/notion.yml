@@ -33,6 +33,3 @@ jobs:
         git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git pull --rebase
         python weibo_to_notion.py
-        git add .
-        git commit -m "update by github action"
-        git push 
