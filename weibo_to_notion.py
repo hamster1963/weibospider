@@ -16,7 +16,8 @@ utc_dt = datetime.utcnow().replace(tzinfo=timezone.utc)
 # print(utc_dt)
 cn_dt = utc_dt.astimezone(timezone(timedelta(hours=8)))
 # print(cn_dt)
-update_time = cn_dt.now().strftime('%Y-%m-%d %H:%M:%S')
+update_time = cn_dt.strftime('%Y-%m-%d %H:%M:%S')
+print(update_time)
 
 def get_latestjson():
     """
@@ -144,7 +145,7 @@ def push_to_notion(uploadjson):
                     {
                         "type": "text",
                         "text": {
-                            "content": update_time,
+                            "content": slugtime,
                             "link": None
                         },
                     }
@@ -176,5 +177,6 @@ if __name__ == "__main__":
             uptime.append(x.group())
     uptime = "".join(uptime)
     uploadjson = uploadjson = "微博今日热搜" + " " + update_time + "\n" + convert_json()
+    slugtime = update_time
     saveword()
     push_to_notion(uploadjson)
