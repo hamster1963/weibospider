@@ -116,10 +116,17 @@ def updateJSON(correntRank):
 
     # 将榜单按 hot 值排序
     rank = {k: v for k, v in sorted(historyRank.items(), key=lambda item: item[1]['hot'], reverse=True)}
-
+    new_rank = {}
+    for i,(k,v) in enumerate(rank.items()):
+        new_rank[k] = v
+        if i == 11:
+            break
+    print(new_rank)
     # 更新当天榜单 json 文件
-    save(filename, rank)
-    return rank
+    save(filename, new_rank)
+
+
+    return new_rank
 
 
 def updateArchive(rank):
@@ -152,12 +159,12 @@ def updateReadme(rank):
     """
     try:
         filename = './README.md'
-
         rank = '最后更新时间 {}\n\n'.format(datetime.now().strftime('%Y-%m-%d %X')) + rank
 
         rank = '<!-- Rank Begin -->\n\n' + rank + '\n<!-- Rank End -->'
 
         content = re.sub(r'<!-- Rank Begin -->[\s\S]*<!-- Rank End -->', rank, load(filename))
+
         save(filename, content)
 
     except IOError:
