@@ -119,7 +119,7 @@ def updateJSON(correntRank):
         # 若当前榜单和历史榜单有重复的，取热度数值(名称后面的数值)更大的一个
         if k in historyRank:
             historyRank[k]['hot'] = max(historyRank[k]['hot'], correntRank[k]['hot'])
-        # 若没有，则添加
+        # 若没有，则添加1
         else:
             historyRank[k] = v
 
