@@ -28,11 +28,14 @@ jobs:
         
     - name: Run
       run: |
+
+        python createwordcloud.py
+
+    - name: Commit and push
+      run: |
+        git diff
         git config --local user.email "1410514192@qq.com"
         git config --local user.name "hamster1963"
-        git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-        git pull --rebase
-        python createwordcloud.py
         git add .
-        git commit -m "createwordcloud"
+        git commit -m "生成词云图"
         git push 
