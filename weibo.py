@@ -128,7 +128,7 @@ def updateJSON(correntRank):
     new_rank = {}
     for i,(k,v) in enumerate(rank.items()):
         new_rank[k] = v
-        if i == 11:
+        if i == 20:
             break
     print(new_rank)
     # 更新当天榜单 json 文件
