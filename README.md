@@ -25,4 +25,4 @@
 1. [建龙集团董事长称钢价涨得不好意思了](https://s.weibo.com/weibo?q=%23%E5%BB%BA%E9%BE%99%E9%9B%86%E5%9B%A2%E8%91%A3%E4%BA%8B%E9%95%BF%E7%A7%B0%E9%92%A2%E4%BB%B7%E6%B6%A8%E5%BE%97%E4%B8%8D%E5%A5%BD%E6%84%8F%E6%80%9D%E4%BA%86%23&Refer=top) 1193783
 <!-- Rank End -->
 
-![avatar](latest.jpg)
+![avatar](./wordimg/latest.jpg)

@@ -53,5 +53,5 @@ wordcloud = WordCloud(background_color="white", max_words=500, width=2000, heigh
 plt.imshow(wordcloud)
 plt.axis("off")
 plt.savefig('微博 %s.jpg' % image_time, dpi=200)
-plt.savefig('latest.jpg', dpi=200)
+plt.savefig('./wordimg/latest.jpg', dpi=200)
 plt.show()
