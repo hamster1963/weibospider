@@ -1,18 +1,26 @@
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 import json
 import os
 import re
 from lxml import etree
 import requests
 import log_tools
-
+# 基础url
 BASE_URL = 'https://s.weibo.com'
+
 # raw json文件位置
 JSON_DIR = './raw'
 ARCHIVE_DIR = './archives'
 LOG_DIR = './logs'
 
+# 错误打印位置
 logger = log_tools.init_logger(__name__)
+
+# 获取东八区时间
+utc_dt = datetime.utcnow().replace(tzinfo=timezone.utc)
+# print(utc_dt)
+cn_dt = utc_dt.astimezone(timezone(timedelta(hours=8)))
+# print(cn_dt)
 
 
 def getHTML(url, needPretty=False):
@@ -98,7 +106,8 @@ def updateJSON(correntRank):
     Returns:
         与当天历史榜单对比去重, 排序后的榜单信息字典
     """
-    filename = datetime.today().strftime('%Y%m%d') + '.json'
+    filename = cn_dt.today().strftime('%Y%m%d') + '.json'
+    print(filename)
     filename = os.path.join(JSON_DIR, filename)
 
     # 文件不存在则创建
@@ -141,7 +150,7 @@ def updateArchive(rank):
     lines = [line.format(title=k, hot=v['hot'], href=v['href']) for k, v in rank.items()]
     content = '\n'.join(lines)
 
-    filename = datetime.today().strftime('%Y%m%d') + '.md'
+    filename = cn_dt.today().strftime('%Y%m%d') + '.md'
     filename = os.path.join(ARCHIVE_DIR, filename)
 
     # 更新当天榜单 markdown 文件
@@ -159,7 +168,9 @@ def updateReadme(rank):
     """
     try:
         filename = './README.md'
-        rank = '最后更新时间 {}\n\n'.format(datetime.now().strftime('%Y-%m-%d %X')) + rank
+
+
+        rank = '最后更新时间 {}\n\n'.format(cn_dt.strftime('%Y-%m-%d %X')) + rank
 
         rank = '<!-- Rank Begin -->\n\n' + rank + '\n<!-- Rank End -->'
 
@@ -171,7 +182,7 @@ def updateReadme(rank):
         print(
             "Error: 没有找到文件或读取文件失败")
     else:
-        print('最后更新时间 {}\n\n'.format(datetime.now().strftime('%Y-%m-%d %X')))
+        print('最后更新时间 {}\n\n'.format(cn_dt.now().strftime('%Y-%m-%d %X')))
 
 
 def main():

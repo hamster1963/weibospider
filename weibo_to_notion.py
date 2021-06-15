@@ -44,7 +44,7 @@ def convert_json():
         return jsonlist
 
 
-def push_to_notion(uploadjson, lastestjson):
+def push_to_notion(uploadjson):
     json = {
         'parent': {
             'database_id': 'b353529fd9734f78ae4fc8c68bd5a609'
@@ -57,7 +57,7 @@ def push_to_notion(uploadjson, lastestjson):
                     {
                         'type': 'text',
                         'text': {
-                            'content': uptime,
+                            'content': "微博"+" "+uptime,
                             'link': None
                         },
                         'annotations': {
@@ -137,4 +137,4 @@ if __name__ == "__main__":
             uptime.append(x.group())
     uptime = "".join(uptime)
     uploadjson = convert_json()
-    push_to_notion(uploadjson, lastest_json)
+    push_to_notion(uploadjson)
