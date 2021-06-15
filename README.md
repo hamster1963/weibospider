@@ -21,3 +21,5 @@
 1. [湖南一网红吊桥突然断裂20余人落水](https://s.weibo.com/weibo?q=%23%E6%B9%96%E5%8D%97%E4%B8%80%E7%BD%91%E7%BA%A2%E5%90%8A%E6%A1%A5%E7%AA%81%E7%84%B6%E6%96%AD%E8%A3%8220%E4%BD%99%E4%BA%BA%E8%90%BD%E6%B0%B4%23&Refer=top) 879854
 1. [我国新冠疫苗接种剂次超9亿](https://s.weibo.com/weibo?q=%23%E6%88%91%E5%9B%BD%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E6%8E%A5%E7%A7%8D%E5%89%82%E6%AC%A1%E8%B6%859%E4%BA%BF%23&Refer=top) 799152
 <!-- Rank End -->
+
+![avatar](latest.jpg)
