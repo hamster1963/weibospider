@@ -107,7 +107,6 @@ def updateJSON(correntRank):
         与当天历史榜单对比去重, 排序后的榜单信息字典
     """
     filename = cn_dt.today().strftime('%Y%m%d') + '.json'
-    print(filename)
     filename = os.path.join(JSON_DIR, filename)
 
     # 文件不存在则创建
@@ -184,6 +183,23 @@ def updateReadme(rank):
     else:
         print('最后更新时间 {}\n\n'.format(cn_dt.now().strftime('%Y-%m-%d %X')))
 
+def saveword():
+    """
+    保存到文件中便于生成词云
+    Returns:
+
+    """
+    jsonlist = []
+    filename = cn_dt.today().strftime('%Y%m%d') + '.json'
+    filename = os.path.join(JSON_DIR, filename)
+    with open(filename) as js:
+        jsoncontent = json.load(js)
+        for i in jsoncontent:
+            jsonlist.append(i)
+        jsonlist = '\n'.join(jsonlist)
+        with open('word.txt','w') as fp:
+            fp.write(jsonlist)
+
 
 def main():
     url = '/top/summary'
@@ -193,6 +209,7 @@ def main():
         rankJSON = updateJSON(correntRank)
         rankMD = updateArchive(rankJSON)
         updateReadme(rankMD)
+        saveword()
     except Exception as e:
         logger.exception(e)
         raise e

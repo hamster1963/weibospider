@@ -178,5 +178,5 @@ if __name__ == "__main__":
     uptime = "".join(uptime)
     uploadjson = uploadjson = "微博今日热搜" + " " + update_time + "\n" + convert_json()
     slugtime = update_time
-    saveword()
+    #saveword()
     push_to_notion(uploadjson)
