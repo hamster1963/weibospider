@@ -1,6 +1,6 @@
 <!-- Rank Begin -->
 
-最后更新时间 2021-06-18 20:13:32
+最后更新时间 2021-06-18 21:22:18
 
 1. [中山大学通报赵某晨造谣多名女生](https://s.weibo.com/weibo?q=%23%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E9%80%9A%E6%8A%A5%E8%B5%B5%E6%9F%90%E6%99%A8%E9%80%A0%E8%B0%A3%E5%A4%9A%E5%90%8D%E5%A5%B3%E7%94%9F%23&Refer=top) 3116089
 1. [太空外卖 宫保鸡丁](https://s.weibo.com/weibo?q=%E5%A4%AA%E7%A9%BA%E5%A4%96%E5%8D%96%20%E5%AE%AB%E4%BF%9D%E9%B8%A1%E4%B8%81&Refer=top) 3037542
@@ -20,9 +20,9 @@
 1. [打疫苗时该死的仪式感](https://s.weibo.com/weibo?q=%23%E6%89%93%E7%96%AB%E8%8B%97%E6%97%B6%E8%AF%A5%E6%AD%BB%E7%9A%84%E4%BB%AA%E5%BC%8F%E6%84%9F%23&Refer=top) 1270239
 1. [充值40万给孩子报培训班](https://s.weibo.com/weibo?q=%23%E5%85%85%E5%80%BC40%E4%B8%87%E7%BB%99%E5%AD%A9%E5%AD%90%E6%8A%A5%E5%9F%B9%E8%AE%AD%E7%8F%AD%23&Refer=top) 1261812
 1. [深圳疫情](https://s.weibo.com/weibo?q=%E6%B7%B1%E5%9C%B3%E7%96%AB%E6%83%85&Refer=top) 1249864
+1. [欲跳崖轻生结果在崖边睡着了](https://s.weibo.com/weibo?q=%23%E6%AC%B2%E8%B7%B3%E5%B4%96%E8%BD%BB%E7%94%9F%E7%BB%93%E6%9E%9C%E5%9C%A8%E5%B4%96%E8%BE%B9%E7%9D%A1%E7%9D%80%E4%BA%86%23&Refer=top) 1149567
 1. [张杰也没抢到票](https://s.weibo.com/weibo?q=%23%E5%BC%A0%E6%9D%B0%E4%B9%9F%E6%B2%A1%E6%8A%A2%E5%88%B0%E7%A5%A8%23&Refer=top) 1141762
 1. [双汇集团创始人长子万洪建被免职](https://s.weibo.com/weibo?q=%23%E5%8F%8C%E6%B1%87%E9%9B%86%E5%9B%A2%E5%88%9B%E5%A7%8B%E4%BA%BA%E9%95%BF%E5%AD%90%E4%B8%87%E6%B4%AA%E5%BB%BA%E8%A2%AB%E5%85%8D%E8%81%8C%23&Refer=top) 1102564
-1. [辞职时被领导说没出息](https://s.weibo.com/weibo?q=%23%E8%BE%9E%E8%81%8C%E6%97%B6%E8%A2%AB%E9%A2%86%E5%AF%BC%E8%AF%B4%E6%B2%A1%E5%87%BA%E6%81%AF%23&Refer=top) 1069037
 <!-- Rank End -->
 
 ![avatar](./wordimg/latest.jpg)
