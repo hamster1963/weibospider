@@ -1,6 +1,6 @@
 <!-- Rank Begin -->
 
-最后更新时间 2021-06-21 18:10:39
+最后更新时间 2021-06-21 19:08:18
 
 1. [谭鸭血道歉](https://s.weibo.com/weibo?q=%E8%B0%AD%E9%B8%AD%E8%A1%80%E9%81%93%E6%AD%89&Refer=top) 5208749
 1. [向佐好刚](https://s.weibo.com/weibo?q=%23%E5%90%91%E4%BD%90%E5%A5%BD%E5%88%9A%23&Refer=top) 4335358
@@ -18,11 +18,11 @@
 1. [烈士陵园那张照片不是父亲而是我](https://s.weibo.com/weibo?q=%23%E7%83%88%E5%A3%AB%E9%99%B5%E5%9B%AD%E9%82%A3%E5%BC%A0%E7%85%A7%E7%89%87%E4%B8%8D%E6%98%AF%E7%88%B6%E4%BA%B2%E8%80%8C%E6%98%AF%E6%88%91%23&Refer=top) 1404214
 1. [盲人被撞前1秒被公交司机拉回](https://s.weibo.com/weibo?q=%E7%9B%B2%E4%BA%BA%E8%A2%AB%E6%92%9E%E5%89%8D1%E7%A7%92%E8%A2%AB%E5%85%AC%E4%BA%A4%E5%8F%B8%E6%9C%BA%E6%8B%89%E5%9B%9E&Refer=top) 1314690
 1. [这些画都是汤唯爸爸画的](https://s.weibo.com/weibo?q=%23%E8%BF%99%E4%BA%9B%E7%94%BB%E9%83%BD%E6%98%AF%E6%B1%A4%E5%94%AF%E7%88%B8%E7%88%B8%E7%94%BB%E7%9A%84%23&Refer=top) 1242546
+1. [吴磊对张子枫撒娇](https://s.weibo.com/weibo?q=%23%E5%90%B4%E7%A3%8A%E5%AF%B9%E5%BC%A0%E5%AD%90%E6%9E%AB%E6%92%92%E5%A8%87%23&Refer=top) 1212784
 1. [阿曼 确保中国人必须先打到疫苗](https://s.weibo.com/weibo?q=%E9%98%BF%E6%9B%BC%20%E7%A1%AE%E4%BF%9D%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%BF%85%E9%A1%BB%E5%85%88%E6%89%93%E5%88%B0%E7%96%AB%E8%8B%97&Refer=top) 1205396
 1. [青藏高原可可西里地区再现巨大垃圾带](https://s.weibo.com/weibo?q=%23%E9%9D%92%E8%97%8F%E9%AB%98%E5%8E%9F%E5%8F%AF%E5%8F%AF%E8%A5%BF%E9%87%8C%E5%9C%B0%E5%8C%BA%E5%86%8D%E7%8E%B0%E5%B7%A8%E5%A4%A7%E5%9E%83%E5%9C%BE%E5%B8%A6%23&Refer=top) 1195793
 1. [第二针比第一针疼](https://s.weibo.com/weibo?q=%23%E7%AC%AC%E4%BA%8C%E9%92%88%E6%AF%94%E7%AC%AC%E4%B8%80%E9%92%88%E7%96%BC%23&Refer=top) 1174435
 1. [朱婷被袁心玥声音震到](https://s.weibo.com/weibo?q=%23%E6%9C%B1%E5%A9%B7%E8%A2%AB%E8%A2%81%E5%BF%83%E7%8E%A5%E5%A3%B0%E9%9F%B3%E9%9C%87%E5%88%B0%23&Refer=top) 1143689
-1. [航天员女教头提到一首歌哽咽了](https://s.weibo.com/weibo?q=%23%E8%88%AA%E5%A4%A9%E5%91%98%E5%A5%B3%E6%95%99%E5%A4%B4%E6%8F%90%E5%88%B0%E4%B8%80%E9%A6%96%E6%AD%8C%E5%93%BD%E5%92%BD%E4%BA%86%23&Refer=top) 1117491
 <!-- Rank End -->
 
 ![avatar](./wordimg/latest.jpg)
